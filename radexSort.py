@@ -33,3 +33,9 @@ def radixSort(a_list, base):
     for digit_num in range(passes):
         new_list = merge(split(new_list, base, digit_num))
     return new_list
+    
+if __name__=="__main__":
+    a=[9,8,7,6,5,4,3,2,1,0]
+    b=a[::]
+    radixSort(a,10 )
+    print (b)
